@@ -1,37 +1,33 @@
+const { password } = require("../config/env");
 
 module.exports = (sequelize, Sequelize) => {
-	const Song = sequelize.define('song', {	
-	  id: {
+	const Tasks = sequelize.define('tasks', {	
+	  id_Tks: {
 			type: Sequelize.INTEGER,
 			autoIncrement: true,
 			primaryKey: true
     },
-	  songname: {
+	  id_pro: {
 			type: Sequelize.STRING
 	  },
-	  description: {
+	  name_tks: {
 			type: Sequelize.STRING
   	},
-	  artist: {
+	  status_tks: {
 			type: Sequelize.STRING
 	  },
-	  time: {
-			type: Sequelize.INTEGER
+	  creatiodate_tks: {
+			type: Sequelize.DATE
     },
-	  extension: {
-			type: Sequelize.STRING
-	  },
-	  album: {
-			type: Sequelize.STRING
-	  },
-	  year: {
-			type: Sequelize.INTEGER
-	  },
+      duedate_tks: {
+        type: Sequelize.DATE
+    },
+	  
     copyrightby: {
       type: Sequelize.STRING,
       defaultValue: 'UMG Antigua'
     }
 	});
 	
-	return Song;
+	return Tasks;
 }

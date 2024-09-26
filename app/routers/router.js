@@ -2,7 +2,7 @@
 let express = require('express');
 let router = express.Router();
  
-const song = require('../controllers/controller.js');
+const song = require('../controllers/user.controller.js');
 
 router.post('/api/song/create', song.create);
 router.get('/api/song/all', song.retrieveAllSong);
