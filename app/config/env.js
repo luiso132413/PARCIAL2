@@ -1,10 +1,10 @@
 
 
 const env = {
-  database: 'antigua_umg2024_4441_user',
-  username: 'antigua_umg2024_4441_user_user',
-  password: 'tYnVvGiYQ0Leg6257ZJRhaT17J7Yw6I2',
-  host: 'dpg-cr6jnbt6l47c7394rch0-a.oregon-postgres.render.com',
+  database: 'bancodtb',
+  username: 'bancodtb_user',
+  password: 'isXH6IdzJs0wMAND5rqxtryDokPPF7Zk',
+  host: 'dpg-d00mbv0dl3ps73e5hkh0-a.oregon-postgres.render.com',
   dialect: 'postgres',
   pool: {
     max: 5,
